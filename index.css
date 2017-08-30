@@ -1,0 +1,233 @@
+body {
+    background-color: #0d0b0d;
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+#video{
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		top:0;
+		right:0;
+		width: 100%;
+		height: 100%;
+		background-size: 100% 100%;
+ 		background-color: black;
+  		background-image: ;
+  		background-position: center center;
+  		background-size: contain;
+   		object-fit: cover;
+        z-index: -10;
+}
+#contact button {
+    background-color: #FFFFFF;
+    color: #fcd62d;
+    font-weight: 700;
+    border: 2px solid;
+    margin-left: 25px;
+    padding: 10px 20px;
+    cursor: pointer;
+    -moz-transition: 0.25s ease-out;
+    -o-transition: 0.25s ease-out;
+    transition: 0.25s ease-out;
+}
+
+#contact button:hover {
+    background-color: #fcd62d;
+    color: #FFFFFF;
+}
+#contact button:active {
+     padding: 8px 18px;
+}
+input[type="email"] {
+    border: none;
+    border-bottom: 2px solid;
+    border-color: #f0f0f0;
+    width: 50%;
+    margin: 15px 0;
+    font-size: 2em;
+    font-weight: 300;
+}
+
+button:focus,
+input[type="email"]:focus {
+    outline: 0;
+}
+
+#circle {
+    position: absolute;
+    top: 2vh;
+    left: 2vw;
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border-width: 10px;
+    border-color: #FFFFFF;
+    border-style: solid;
+    z-index: 1;
+    -moz-transition: 0.25s ease-out;
+    -o-transition: 0.25s ease-out;
+    transition: 0.25s ease-out;
+}
+
+#contact {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    z-index: 2;
+    color: #000000;
+    -moz-transition: 0.35s ease-out;
+    -o-transition: 0.35s ease-out;
+    transition: 0.35s ease-out;
+    visibility: hidden;
+    opacity: 0;
+}
+
+#contact span {
+    display: block;
+    position: relative;
+    -moz-transition: 0.35s ease-out;
+    -o-transition: 0.35s ease-out;
+    transition: 0.35s ease-out;
+    margin-top: -20vh;
+}
+#contact.active span {
+    margin-top: 0;
+}
+
+#circle:hover {
+    cursor: pointer;
+    border-width: 15px;
+    background-color: #FFFFFF;
+}
+
+#circle.active {
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+    top: 0;
+    left: 0;
+    border-radius: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+    background-color: #FFFFFF;
+}
+
+#contact.active {
+    visibility: inherit;
+    opacity: 1;
+}
+
+#contact h2 {
+    color: #fcd62d;
+}
+
+.landing {
+    text-align: center;
+}
+
+.landing span:nth-child(2) {
+    height: 85vh;
+    width: 50vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fcd62d;
+    z-index: -1;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 6em;
+    margin: 0.2em 0;
+}
+
+h2 {
+    font-weight: 500;
+}
+
+#title {
+    display: inline-block;
+    width: auto;
+    text-align: left;
+}
+.about {
+    padding-left: 10vw;
+}
+.about span:nth-child(1) {
+    height: 100vh;
+    width: 4vw;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #fcd62d;
+    z-index: 1;
+}
+.banner {
+    width: 80vw;
+    height: auto;
+    position: absolute;
+    left: 20vw;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: -1;
+}
+.about h2{
+    font-size: 6em;
+    margin: 0;
+    margin-left: 1em;
+}
+.about h2:nth-child(3) {
+    margin-left: 3.5em;
+}
+.pargraph {
+    margin-top: 50px;
+    width: 50vw;
+    font-size: 1.2em;
+}
+a {
+    display: inline-block;
+    margin: 5px 0;
+    color: inherit;
+    text-decoration: inherit;
+    -moz-transition: 0.25s ease-out;
+    -o-transition: 0.25s ease-out;
+    transition: 0.25s ease-out;
+}
+a:hover {
+    margin-left: 5px;
+    font-weight: 500;
+}
+#work {
+    padding-top: 5vh;
+    padding-left: 4vw;
+}
+#work h1 {
+    margin-bottom: 50px;
+    font-size: 23em;
+    float: right;
+}
+.card {
+    position: relative;
+    background-color: #fcd62d;
+    background-image: url('/src/collage1.jpg');
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+.card:nth-child(2n){
+    left: 10vw;
+    height: 50vw;
+    width: 20vw;
+    
+}
+.card:nth-child(3n){
+    height: 30vw;
+    width: 50vw;
+    left: 40vw;
+    bottom: 10vw;
+    margin-bottom: -10vw;
+}
