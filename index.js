@@ -31,10 +31,23 @@
          'name': 'No brainer',
          'path': 'src/ilustracion4.jpg',
          'date': '14/01/2016'
+},{
+         'name': 'Old is Better',
+         'path': 'src/poster.jpg',
+         'date': '09/08/2016'
+},{
+         'name': 'Bear',
+         'path': 'src/Identity.png',
+         'date': '20/05/2014'
 }]
      $(document).ready(function () {
          images.forEach(function (a) {
-             $("#gallery").append('<div class="card" style="background-image: url('+a.path+')"> <div class="black"></div> <span><h2>Title:</h2>'+a.name+'<br><h2>Date:</h2>'+a.date+'</span></div>');
+             $("#gallery").append('<div class="card" style="background-image: url(' + a.path + ')"> <div class="black"></div> <span><h2>Title:</h2>' + a.name + '<br><h2>Date:</h2>' + a.date + '</span></div>');
+         });
+
+         $('#contactLink').click(function () {
+             $('#circle').toggleClass('active');
+             $('#contact').toggleClass('active');
          });
          $('#fullpage').fullpage({
              anchors: ['1P', '2P', '3P', '4P', '5P'],

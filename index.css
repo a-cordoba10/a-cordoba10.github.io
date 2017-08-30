@@ -19,6 +19,7 @@ body {
   		background-size: contain;
    		object-fit: cover;
         z-index: -10;
+        opacity: 0.5;
 }
 #contact button {
     background-color: #FFFFFF;
@@ -203,8 +204,7 @@ a:hover {
     font-weight: 500;
 }
 #work {
-    padding-top: 5vh;
-    padding-left: 4vw;
+    padding: 5vh 0 50px 4vw;
 }
 #work h1 {
     margin-bottom: 50px;
@@ -258,4 +258,23 @@ a:hover {
     -moz-transition: 0.25s ease-out;
     -o-transition: 0.25s ease-out;
     transition: 0.25s ease-out;
+}
+.footer {
+    text-align: center;
+    background-image: url(src/footer.png);
+    
+}
+.footer span {
+    display: inline-block;
+    margin: 50px auto;
+}
+.footer img {
+    width: 50px;
+    margin: 0 20px;
+        -moz-transition: 0.25s ease-out;
+    -o-transition: 0.25s ease-out;
+    transition: 0.25s ease-out;
+}
+.footer img:hover {
+    width: 45px;
 }
