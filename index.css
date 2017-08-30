@@ -214,20 +214,48 @@ a:hover {
 .card {
     position: relative;
     background-color: #fcd62d;
-    background-image: url('/src/collage1.jpg');
     background-repeat: no-repeat;
     background-position: center; 
 }
-.card:nth-child(2n){
+.card:nth-child(even){
     left: 10vw;
     height: 50vw;
     width: 20vw;
     
 }
-.card:nth-child(3n){
+.card:nth-child(odd){
     height: 30vw;
     width: 50vw;
     left: 40vw;
     bottom: 10vw;
     margin-bottom: -10vw;
+}
+.black {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-color: #000000;
+    visibility: hidden;
+    -moz-transition: 0.25s ease-out;
+    -o-transition: 0.25s ease-out;
+    transition: 0.25s ease-out;
+}
+.card.active .black, .card.active span{
+    visibility: inherit;
+}
+.card.active .black{
+    opacity: 0.8;
+}
+.card.active span{
+    opacity: 1;
+}
+.card span {
+    display: inline-block;
+    position: relative;
+    visibility: hidden;
+    opacity: 0;
+    -moz-transition: 0.25s ease-out;
+    -o-transition: 0.25s ease-out;
+    transition: 0.25s ease-out;
 }
